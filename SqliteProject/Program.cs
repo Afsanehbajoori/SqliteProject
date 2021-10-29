@@ -20,9 +20,9 @@ namespace SqliteProject
         private static SQLiteConnection CreateConnection()
         {
             //create a database file:
-            SQLiteConnection.CreateFile("MyDatabase.sqlite");
+            //SQLiteConnection.CreateFile("MyDatabase.sqlite");
             //create a new database connection:
-            SQLiteConnection connection = new SQLiteConnection("Data Source=MyDatabase.sqlite; Version = 3; New = True; Compress = True; ");
+            SQLiteConnection connection = new SQLiteConnection(@"Data Source=C:\Users\afba\source\repos\SqliteProject\SqliteProject\database.db; Version = 3; New = True; Compress = True; ");
             //open a connection:
             connection.Open();
             return connection;
